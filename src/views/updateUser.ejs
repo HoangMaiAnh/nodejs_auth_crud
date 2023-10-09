@@ -1,0 +1,89 @@
+<h1 style="text-align: center">Update user (<%= user.username %>)</h1>
+<form
+  method="post"
+  action="/update-user/<%= user._id  %>"
+>
+  <div class="mt-3">
+    <label
+      for="email"
+      class="form-label"
+      >Email</label
+    >
+    <input
+      type="text"
+      class="form-control"
+      id="email"
+      name="email"
+      required
+      value="<%= user.email %>"
+    />
+  </div>
+  <div class="mt-3">
+    <label
+      for="fullname"
+      class="form-label"
+      >Fullname</label
+    >
+    <input
+      type="text"
+      class="form-control"
+      id="fullname"
+      name="fullname"
+      required
+      value="<%= user.fullname %>"
+    />
+  </div>
+  <div class="mt-3">
+    <label
+      for="phone"
+      class="form-label"
+      >Phone</label
+    >
+    <input
+      type="text"
+      class="form-control"
+      id="phone"
+      name="phone"
+      required
+      value="<%= user.phone %>"
+    />
+  </div>
+  <div class="mt-3">
+    <label
+      for="address"
+      class="form-label"
+      >Address</label
+    >
+    <input
+      type="text"
+      class="form-control"
+      id="address"
+      name="address"
+      required
+      value="<%= user.address %>"
+    />
+  </div>
+  <div class="mt-3">
+    <label
+      for="gender"
+      class="form-label"
+      >Gender</label
+    >
+    <input
+      type="text"
+      class="form-control"
+      id="gender"
+      name="gender"
+      required
+      value="<%= user.gender %>"
+    />
+  </div>
+  <div class="mt-3">
+    <button
+      type="submit"
+      class="btn btn-primary"
+    >
+      Update
+    </button>
+  </div>
+</form>
